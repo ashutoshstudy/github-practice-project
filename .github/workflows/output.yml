@@ -1,0 +1,9 @@
+name: Output Details Workflow
+run-name: Output event details
+on: [workflow_dispatch, issues]
+jobs:
+  event-details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output event details
+        run: exho ${{toJSON(github)}}
