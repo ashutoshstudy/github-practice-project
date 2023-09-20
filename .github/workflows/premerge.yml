@@ -1,6 +1,6 @@
 name: Premerge Workflow
 on: [workflow_dispatch, push]
-description: Check whether the standard checks are running
+run-name: Check whether the standard checks are running
 jobs:
   lint:
     runs-on: ubuntu-latest
